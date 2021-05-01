@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values":
+  [
+    "negative_n:water_n",
+    "negative_n:flowing_water_n"
+  ]
+}

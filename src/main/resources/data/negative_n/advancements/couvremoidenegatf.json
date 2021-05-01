@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "negative_n:diamond_n_chestplate"
+    },
+    "title": {
+      "translate": "advancements.couvremoidenegatf.title"
+    },
+    "description": {
+      "translate": "advancements.couvremoidenegatf.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "couvremoidenegatf": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 30
+  },
+  "parent": "negative_n:inverseinfini"
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "negative_n:blocks/transparent",
+    "up": "negative_n:blocks/transparent",
+    "north": "negative_n:blocks/transparent",
+    "east": "negative_n:blocks/transparent",
+    "south": "negative_n:blocks/vine_n",
+    "west": "negative_n:blocks/transparent",
+    "particle": "negative_n:blocks/transparent"
+  }
+}

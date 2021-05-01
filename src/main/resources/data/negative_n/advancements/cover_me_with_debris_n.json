@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "negative_n:netherite_n_helmet"
+    },
+    "title": {
+      "translate": "advancements.cover_me_with_debris_n.title"
+    },
+    "description": {
+      "translate": "advancements.cover_me_with_debris_n.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "cover_me_with_debris_n": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "negative_n:in_deep_dark_web"
+}

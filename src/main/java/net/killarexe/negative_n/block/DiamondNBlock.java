@@ -1,0 +1,38 @@
+package net.killarexe.negative_n.block;
+
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
+import net.killarexe.negative_n.register.NegativeNBlocks;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Material;
+import net.minecraft.item.ItemStack;
+import net.minecraft.loot.context.LootContext;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.WorldAccess;
+
+import java.util.Collections;
+import java.util.List;
+
+public class DiamondNBlock extends Block {
+
+    public DiamondNBlock() {
+        super(FabricBlockSettings
+                .of(Material.METAL)
+                .strength(5, 19)
+                .breakByHand(false)
+                .sounds(BlockSoundGroup.NETHERITE)
+                .requiresTool()
+                .breakByTool(FabricToolTags.PICKAXES, 6));
+    }
+
+    @Override
+    public List<ItemStack> getDroppedStacks(BlockState state, LootContext.Builder builder) {
+        List<ItemStack> drop = super.getDroppedStacks(state, builder);
+        if(!drop.isEmpty()){
+            return drop;
+        }
+        return Collections.singletonList(new ItemStack(this, 1));
+    }
+}

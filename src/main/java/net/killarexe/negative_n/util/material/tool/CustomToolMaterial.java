@@ -10,6 +10,18 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum CustomToolMaterial implements ToolMaterial {
+    WOODEN_N(1, 64, 3.0F, 1.0F, 10, () -> {
+        return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
+    }),
+
+    COBBLESTONE_N(2, 250, 6.0F, 2.0F, 18, () -> {
+        return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
+    }),
+
+    GOLD_N(4, 128, 18.0F, 2.0F, 36, () -> {
+        return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
+    }),
+
     IRON_N(4, 500, 12.0F, 4.0F, 28, () -> {
         return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
     }),

@@ -100,4 +100,27 @@ public class OreFeatures{
             .spreadHorizontally()
             .repeat(12); // number of veins per chunk
 
+    public static ConfiguredFeature<?, ?> GOLD_N_ORE_FEATURE_OVERWORLD = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    OreFeatureConfig.Rules.BASE_STONE_OVERWORLD,
+                    NegativeNBlocks.GOLD_N_ORE.getDefaultState(),
+                    8)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    5)))
+            .spreadHorizontally()
+            .repeat(4); // number of veins per chunk
+
+    public static ConfiguredFeature<?, ?> GOLD_N_ORE_FEATURE_UNDERWORLD = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    BASE_STONE_N_UNDERWORLD,
+                    NegativeNBlocks.GOLD_N_ORE.getDefaultState(),
+                    16)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    5)))
+            .spreadHorizontally()
+            .repeat(4); // number of veins per chunk
 }

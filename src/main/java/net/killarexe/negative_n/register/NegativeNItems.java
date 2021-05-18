@@ -42,8 +42,10 @@ public class NegativeNItems {
     public static final ToolItem IRON_N_HOE = new BaseTool().HOE(CustomToolMaterial.IRON_N);
     public static final CoalN COAL_N = new CoalN();
     public static final StickN STICK_N = new StickN();
+    public static final LeatherN LEATHER_N = new LeatherN();
     public static final PowderN POWDER_N = new PowderN();
     public static final UnderworldArtefact UNDERWORLD_ARTEFACT = new UnderworldArtefact();
+    public static final GoldNIngot GOLD_N_INGOT = new GoldNIngot();
 
     public static void register(){
         LOGGER.info("Registering Items...");
@@ -70,8 +72,10 @@ public class NegativeNItems {
         registerItem(IRON_N_HOE, "iron_n_hoe");
         registerItem(COAL_N, "coal_n");
         registerItem(STICK_N, "stick_n");
+        registerItem(LEATHER_N, "leather_n");
         registerItem(POWDER_N, "negative_dust");
         registerItem(UNDERWORLD_ARTEFACT, "underworld_artefact");
+        registerItem(GOLD_N_INGOT, "gold_n_ingot");
         LOGGER.info("Items Registering Complete!");
     }
 

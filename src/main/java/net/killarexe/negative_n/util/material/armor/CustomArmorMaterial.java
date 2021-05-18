@@ -5,8 +5,6 @@ import net.fabricmc.api.Environment;
 import net.killarexe.negative_n.register.NegativeNItems;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
-import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
@@ -21,6 +19,14 @@ public enum CustomArmorMaterial implements ArmorMaterial {
 
     IRON_N("iron_n", 30, new int[]{4, 10, 12, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
+    }),
+
+    GOLD_N("gold_n", 30, new int[]{4, 10, 12, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(NegativeNItems.GOLD_N_INGOT);
+    }),
+
+    LEATHER_N("leather_n", 30, new int[]{4, 10, 12, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+        return Ingredient.ofItems(NegativeNItems.LEATHER_N);
     });
 
     private static final int[] BASE_DURABILITY = new int[]{13, 15, 16, 11};

@@ -37,6 +37,8 @@ public class NegativeNBlocks {
     public static final CobblestoneN COBBLESTONE_N = new CobblestoneN();
     public static final SandN SAND_N = new SandN();
     public static final SandStoneN SAND_STONE_N = new SandStoneN();
+    public static final GoldNBlock GOLD_N_BLOCK = new GoldNBlock();
+    public static final GoldNOre GOLD_N_ORE = new GoldNOre();
     public static Block WATER_N;
 
     public static void register(){
@@ -62,6 +64,8 @@ public class NegativeNBlocks {
         registryBlocks(COBBLESTONE_N, "cobblestone_n", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(SAND_N, "sand_n", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(SAND_STONE_N, "sandstone_n", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(GOLD_N_BLOCK, "gold_n_block", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(GOLD_N_ORE, "gold_n_ore", NegativeNItemGroups.BLOCKS, true);
 
         //WATER_N = Registry.register(Registry.BLOCK, new Identifier(MODID, "water_n"), new FluidBlock(NegativeNFluids.STILL_WATER_N, FabricBlockSettings.copyOf(Blocks.WATER)){});
     }
@@ -73,6 +77,8 @@ public class NegativeNBlocks {
         registryOres(addOreFeature("iron_n_ore_feature_underworld"), OreFeatures.IRON_N_ORE_FEATURE_UNDERWORLD);
         registryOres(addOreFeature("coal_n_ore_feature_overworld"), OreFeatures.COAL_N_ORE_FEATURE_OVERWORLD);
         registryOres(addOreFeature("coal_n_ore_feature_underworld"), OreFeatures.COAL_N_ORE_FEATURE_UNDERWORLD);
+        registryOres(addOreFeature("gold_n_ore_feature_overworld"), OreFeatures.GOLD_N_ORE_FEATURE_OVERWORLD);
+        registryOres(addOreFeature("gold_n_ore_feature_underworld"), OreFeatures.GOLD_N_ORE_FEATURE_UNDERWORLD);
     }
 
     private static void registryOres(RegistryKey<ConfiguredFeature<?, ?>> featureRegistryKey, ConfiguredFeature<?, ?> feature){

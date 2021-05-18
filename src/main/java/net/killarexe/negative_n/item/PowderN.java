@@ -4,21 +4,66 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killarexe.negative_n.register.NegativeNBlocks;
 import net.killarexe.negative_n.register.NegativeNItemGroups;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.sound.SoundEvents;
+import net.minecraft.text.MutableText;
+import net.minecraft.text.OrderedText;
+import net.minecraft.text.Style;
+import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.world.World;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class PowderN extends Item {
 
     public PowderN() {
-        super(new FabricItemSettings().group(NegativeNItemGroups.MISC));
+        super(new FabricItemSettings().group(NegativeNItemGroups.MISC).fireproof());
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        super.appendTooltip(stack, world, tooltip, context);
+        String text = "Right Click on Dirt, Grass and Oak Wood to transform it!";
+        tooltip.add(new Text() {
+            @Override
+            public Style getStyle() {
+                return Style.EMPTY;
+            }
+
+            @Override
+            public String asString() {
+                return text;
+            }
+
+            @Override
+            public List<Text> getSiblings() {
+                return null;
+            }
+
+            @Override
+            public MutableText copy() {
+                return null;
+            }
+
+            @Override
+            public MutableText shallowCopy() {
+                return null;
+            }
+
+            @Override
+            public OrderedText asOrderedText() {
+                return null;
+            }
+        });
     }
 
     @Override

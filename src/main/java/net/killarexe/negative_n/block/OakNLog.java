@@ -28,7 +28,7 @@ public class OakNLog extends Block {
                 .sounds(BlockSoundGroup.WOOD)
                 .requiresTool()
                 .breakByTool(FabricToolTags.AXES, 0));
-        setDefaultState(this.getStateManager().getDefaultState().with(Properties.FACING, Direction.DOWN));
+        setDefaultState(this.getStateManager().getDefaultState().with(Properties.FACING, Direction.SOUTH));
     }
 
     @Override

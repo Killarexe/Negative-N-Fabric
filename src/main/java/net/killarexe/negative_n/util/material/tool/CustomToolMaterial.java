@@ -10,16 +10,16 @@ import net.minecraft.util.Lazy;
 import java.util.function.Supplier;
 
 public enum CustomToolMaterial implements ToolMaterial {
-    WOODEN_N(1, 64, 3.0F, 1.0F, 10, () -> {
+    WOODEN_N(1, 118, 4.0F, 1.0F, 30, () -> {
         return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
     }),
 
-    COBBLESTONE_N(2, 250, 6.0F, 2.0F, 18, () -> {
+    COBBLESTONE_N(2, 262, 8.0F, 2.0F, 10, () -> {
         return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
     }),
 
-    GOLD_N(4, 128, 18.0F, 2.0F, 36, () -> {
-        return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
+    GOLD_N(1, 64, 24.0F, 1.0F, 44, () -> {
+        return Ingredient.ofItems(NegativeNItems.GOLD_N_INGOT);
     }),
 
     IRON_N(4, 500, 12.0F, 4.0F, 28, () -> {
@@ -27,6 +27,10 @@ public enum CustomToolMaterial implements ToolMaterial {
     }),
     DIAMOND_N(6, 1561*2, 16.0F, 6.0F, 20, () -> {
         return Ingredient.ofItems(NegativeNItems.DIAMOND_N);
+    }),
+
+    NETHERITE_N(8, 4062, 18.0F, 8.0F, 30, () -> {
+        return Ingredient.ofItems(NegativeNItems.NETHERITE_N_INGOT);
     });
 
     private final int miningLevel;

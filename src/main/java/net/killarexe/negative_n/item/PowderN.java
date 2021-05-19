@@ -30,43 +30,6 @@ public class PowderN extends Item {
     }
 
     @Override
-    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
-        super.appendTooltip(stack, world, tooltip, context);
-        String text = "Right Click on Dirt, Grass and Oak Wood to transform it!";
-        tooltip.add(new Text() {
-            @Override
-            public Style getStyle() {
-                return Style.EMPTY;
-            }
-
-            @Override
-            public String asString() {
-                return text;
-            }
-
-            @Override
-            public List<Text> getSiblings() {
-                return null;
-            }
-
-            @Override
-            public MutableText copy() {
-                return null;
-            }
-
-            @Override
-            public MutableText shallowCopy() {
-                return null;
-            }
-
-            @Override
-            public OrderedText asOrderedText() {
-                return null;
-            }
-        });
-    }
-
-    @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         World world = context.getWorld();
         BlockPos pos = context.getBlockPos();

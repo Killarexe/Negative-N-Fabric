@@ -39,6 +39,9 @@ public class NegativeNBlocks {
     public static final SandStoneN SAND_STONE_N = new SandStoneN();
     public static final GoldNBlock GOLD_N_BLOCK = new GoldNBlock();
     public static final GoldNOre GOLD_N_ORE = new GoldNOre();
+    public static final NetherrackN NETHERRACK_N = new NetherrackN();
+    public static final AncientDebrisN ANCIENT_DEBRIS_N = new AncientDebrisN();
+    public static final NetheriteNBlock NETHERITE_N_BLOCK = new NetheriteNBlock();
     public static Block WATER_N;
 
     public static void register(){
@@ -66,6 +69,9 @@ public class NegativeNBlocks {
         registryBlocks(SAND_STONE_N, "sandstone_n", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(GOLD_N_BLOCK, "gold_n_block", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(GOLD_N_ORE, "gold_n_ore", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(ANCIENT_DEBRIS_N, "ancient_debris_n", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(NETHERITE_N_BLOCK, "netherite_n_block", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(NETHERRACK_N, "netherrack_n", NegativeNItemGroups.BLOCKS, true);
 
         //WATER_N = Registry.register(Registry.BLOCK, new Identifier(MODID, "water_n"), new FluidBlock(NegativeNFluids.STILL_WATER_N, FabricBlockSettings.copyOf(Blocks.WATER)){});
     }

@@ -14,6 +14,9 @@ import java.util.function.Supplier;
 
 public enum CustomArmorMaterial implements ArmorMaterial {
 
+    NETHERITE_N("netherite_n", 74, new int[]{6, 12, 16, 6}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 2.0F, () -> {
+        return Ingredient.ofItems(NegativeNItems.NETHERITE_N_INGOT);}),
+
     DIAMOND_N("diamond_n", 66, new int[]{6, 12, 16, 6}, 20, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 4.0F, 0.0F, () -> {
         return Ingredient.ofItems(NegativeNItems.DIAMOND_N);}),
 
@@ -21,11 +24,11 @@ public enum CustomArmorMaterial implements ArmorMaterial {
         return Ingredient.ofItems(NegativeNItems.IRON_N_INGOT);
     }),
 
-    GOLD_N("gold_n", 30, new int[]{4, 10, 12, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 0.0F, 0.0F, () -> {
+    GOLD_N("gold_n", 14, new int[]{2, 6, 10, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(NegativeNItems.GOLD_N_INGOT);
     }),
 
-    LEATHER_N("leather_n", 30, new int[]{4, 10, 12, 4}, 18, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
+    LEATHER_N("leather_n", 10, new int[]{2, 4, 6, 2}, 30, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, 0.0F, 0.0F, () -> {
         return Ingredient.ofItems(NegativeNItems.LEATHER_N);
     });
 

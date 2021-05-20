@@ -20,7 +20,7 @@
         "Name": "negative_n:stone_n"
       },
       "default_fluid": {
-        "Name": "minecraft:water",
+        "Name": "minecraft:lava",
         "Properties": {
           "level": "0"
         }

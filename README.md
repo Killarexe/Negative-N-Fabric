@@ -1,9 +1,14 @@
-# Fabric Example Mod
+# Negative-N Fabric Edition
 
-## Setup
+## Websites:
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+You can download in [curseforge](https://www.curseforge.com/minecraft/mc-mods/negative-n) or int [MCreator](https://mcreator.net/modification/58199/negative-n-fr).
+
+You can see Negative-N Forge repository [here](https://github.com/Killarexe/Negative-N-Forge-Version). And see my other projects in [github profile](https://github.com/Killarexe).
+
+##Wiki:
+You see the wiki of Negative-N Forge and Fabric [here](https://github.com/Killarexe/Negative-N-Forge-Version/wiki)
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the CC0 license.

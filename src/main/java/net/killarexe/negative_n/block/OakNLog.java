@@ -6,6 +6,7 @@ import net.killarexe.negative_n.register.NegativeNBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
+import net.minecraft.block.PillarBlock;
 import net.minecraft.item.ItemPlacementContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.context.LootContext;
@@ -18,7 +19,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Collections;
 import java.util.List;
 
-public class OakNLog extends Block {
+public class OakNLog extends PillarBlock {
 
     public OakNLog() {
         super(FabricBlockSettings
@@ -28,7 +29,6 @@ public class OakNLog extends Block {
                 .sounds(BlockSoundGroup.WOOD)
                 .requiresTool()
                 .breakByTool(FabricToolTags.AXES, 0));
-        setDefaultState(this.getStateManager().getDefaultState().with(Properties.FACING, Direction.SOUTH));
     }
 
     @Override
@@ -38,15 +38,5 @@ public class OakNLog extends Block {
             return drop;
         }
         return Collections.singletonList(new ItemStack(this, 1));
-    }
-
-    @Override
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(Properties.FACING);
-    }
-
-    @Override
-    public @Nullable BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(Properties.FACING, ctx.getPlayerLookDirection());
     }
 }

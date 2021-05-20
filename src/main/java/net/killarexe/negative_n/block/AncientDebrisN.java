@@ -6,6 +6,7 @@ import net.killarexe.negative_n.register.NegativeNItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.sound.BlockSoundGroup;
@@ -20,7 +21,7 @@ public class AncientDebrisN extends Block {
                 .of(Material.METAL)
                 .strength(5, 19)
                 .breakByHand(false)
-                .sounds(BlockSoundGroup.STONE)
+                .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 6));
     }
@@ -31,6 +32,6 @@ public class AncientDebrisN extends Block {
         if(!drop.isEmpty()){
             return drop;
         }
-        return Collections.singletonList(new ItemStack(NegativeNItems.RAW_IRON_N, 1));
+        return Collections.singletonList(new ItemStack(this, 1));
     }
 }

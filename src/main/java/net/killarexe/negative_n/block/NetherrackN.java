@@ -20,7 +20,7 @@ public class NetherrackN extends Block {
                 .of(Material.STONE)
                 .strength(1.3f, 10)
                 .breakByHand(false)
-                .sounds(BlockSoundGroup.STONE)
+                .sounds(BlockSoundGroup.NETHERRACK)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 1));
     }

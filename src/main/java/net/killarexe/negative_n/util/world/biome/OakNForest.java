@@ -50,10 +50,15 @@ public class OakNForest {
         generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.DIAMOND_N_ORE_FEATURE_UNDERWORLD);
         generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.IRON_N_ORE_FEATURE_UNDERWORLD);
         generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.COAL_N_ORE_FEATURE_UNDERWORLD);
+        DefaultBiomeFeatures.addDefaultUndergroundStructures(generationSettings);
         DefaultBiomeFeatures.addLandCarvers(generationSettings);
+        DefaultBiomeFeatures.addDefaultLakes(generationSettings);
+        DefaultBiomeFeatures.addDungeons(generationSettings);
         DefaultBiomeFeatures.addMineables(generationSettings);
+        //DefaultBiomeFeatures.addDefaultOres(generationSettings);
         DefaultBiomeFeatures.addDefaultDisks(generationSettings);
         DefaultBiomeFeatures.addSprings(generationSettings);
+        DefaultBiomeFeatures.addFrozenTopLayer(generationSettings);
 
         return (new Biome.Builder())
                 .precipitation(Biome.Precipitation.NONE)

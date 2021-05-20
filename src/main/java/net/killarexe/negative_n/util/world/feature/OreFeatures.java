@@ -1,32 +1,18 @@
 package net.killarexe.negative_n.util.world.feature;
 
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.killarexe.negative_n.register.NegativeNBlocks;
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.structure.rule.BlockMatchRuleTest;
 import net.minecraft.structure.rule.RuleTest;
-import net.minecraft.structure.rule.RuleTestType;
-import net.minecraft.structure.rule.TagMatchRuleTest;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.BuiltinRegistries;
-import net.minecraft.util.registry.Registry;
-import net.minecraft.util.registry.RegistryKey;
-import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.decorator.Decorator;
 import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 
-import java.util.Random;
-import java.util.function.Predicate;
-
 public class OreFeatures{
 
-    static RuleTest BASE_STONE_N_UNDERWORLD = new BlockMatchRuleTest(NegativeNBlocks.STONE_N);
+    private static RuleTest BASE_STONE_N_UNDERWORLD = new BlockMatchRuleTest(NegativeNBlocks.STONE_N);
+    private static RuleTest BASE_NETHERRACK_N_NETHER = new BlockMatchRuleTest(NegativeNBlocks.NETHERRACK_N);
 
     public static ConfiguredFeature<?, ?> DIAMOND_N_ORE_FEATURE_OVERWORLD = Feature.ORE
             .configure(new OreFeatureConfig(
@@ -108,7 +94,7 @@ public class OreFeatures{
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0,
                     0,
-                    5)))
+                    24)))
             .spreadHorizontally()
             .repeat(4); // number of veins per chunk
 
@@ -116,11 +102,23 @@ public class OreFeatures{
             .configure(new OreFeatureConfig(
                     BASE_STONE_N_UNDERWORLD,
                     NegativeNBlocks.GOLD_N_ORE.getDefaultState(),
-                    16)) // vein size
+                    8)) // vein size
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
                     0,
                     0,
-                    5)))
+                    24)))
+            .spreadHorizontally()
+            .repeat(4); // number of veins per chunk
+
+    public static ConfiguredFeature<?, ?> ANCIENT_DEBRIS_N_FEATURE_NETHER_N = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    BASE_NETHERRACK_N_NETHER,
+                    NegativeNBlocks.ANCIENT_DEBRIS_N.getDefaultState(),
+                    4)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    16)))
             .spreadHorizontally()
             .repeat(4); // number of veins per chunk
 }

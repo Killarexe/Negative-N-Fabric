@@ -12,7 +12,7 @@ import net.minecraft.entity.effect.StatusEffects;
 public class Withered extends Enchantment {
 
     public Withered() {
-        super(Rarity.VERY_RARE, EnchantmentTarget.DIGGER, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        super(Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override

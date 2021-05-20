@@ -27,10 +27,13 @@ public class NegativeNItems {
     public static final LeatherN LEATHER_N = new LeatherN();
     public static final PowderN POWDER_N = new PowderN();
     public static final UnderworldArtefact UNDERWORLD_ARTEFACT = new UnderworldArtefact();
+    public static final NetherNArtefact NETHER_N_ARTEFACT = new NetherNArtefact();
     public static final GoldNIngot GOLD_N_INGOT = new GoldNIngot();
     public static final RawGoldN RAW_GOLD_N = new RawGoldN();
     public static final NetheriteNScrap NETHERITE_N_SCRAP = new NetheriteNScrap();
     public static final NetheriteNIngot NETHERITE_N_INGOT = new NetheriteNIngot();
+    public static final GoldNNugget GOLD_N_NUGGET = new GoldNNugget();
+    public static final IronNNugget IRON_N_NUGGET = new IronNNugget();
 
     //Tools
     public static final ToolItem DIAMOND_N_SWORD = new BaseTool().SWORD(CustomToolMaterial.DIAMOND_N);
@@ -150,7 +153,8 @@ public class NegativeNItems {
         registerItem(NETHERITE_N_LEGGINGS, "netherite_n_leggings");
         registerItem(NETHERITE_N_BOOTS, "netherite_n_boots");
         registerItem(NETHERITE_N_SCRAP, "netherite_n_scrap");
-        registerItem(NETHERITE_N_INGOT, "netherite_n_ingot");
+        registerItem(NETHERITE_N_INGOT, "netherite_n");
+        registerItem(NETHER_N_ARTEFACT, "nether_n_artefact");
 
         LOGGER.info("Items Registering Complete!");
     }

@@ -20,7 +20,7 @@ public class NetheriteNBlock extends Block {
                 .of(Material.METAL)
                 .strength(5, 19)
                 .breakByHand(false)
-                .sounds(BlockSoundGroup.STONE)
+                .sounds(BlockSoundGroup.NETHERITE)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 6));
     }

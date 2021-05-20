@@ -42,6 +42,7 @@ public class NegativeNBlocks {
     public static final NetherrackN NETHERRACK_N = new NetherrackN();
     public static final AncientDebrisN ANCIENT_DEBRIS_N = new AncientDebrisN();
     public static final NetheriteNBlock NETHERITE_N_BLOCK = new NetheriteNBlock();
+    public static final NetherNGoldNOre NETHER_N_GOLD_N_ORE = new NetherNGoldNOre();
     public static Block WATER_N;
 
     public static void register(){
@@ -72,6 +73,7 @@ public class NegativeNBlocks {
         registryBlocks(ANCIENT_DEBRIS_N, "ancient_debris_n", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(NETHERITE_N_BLOCK, "netherite_n_block", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(NETHERRACK_N, "netherrack_n", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(NETHER_N_GOLD_N_ORE, "nether_n_gold_n_ore", NegativeNItemGroups.BLOCKS, true);
 
         //WATER_N = Registry.register(Registry.BLOCK, new Identifier(MODID, "water_n"), new FluidBlock(NegativeNFluids.STILL_WATER_N, FabricBlockSettings.copyOf(Blocks.WATER)){});
     }
@@ -85,6 +87,7 @@ public class NegativeNBlocks {
         registryOres(addOreFeature("coal_n_ore_feature_underworld"), OreFeatures.COAL_N_ORE_FEATURE_UNDERWORLD);
         registryOres(addOreFeature("gold_n_ore_feature_overworld"), OreFeatures.GOLD_N_ORE_FEATURE_OVERWORLD);
         registryOres(addOreFeature("gold_n_ore_feature_underworld"), OreFeatures.GOLD_N_ORE_FEATURE_UNDERWORLD);
+        registryOres(addOreFeature("ancient_debris_n_feature_nether_n"), OreFeatures.ANCIENT_DEBRIS_N_FEATURE_NETHER_N);
     }
 
     private static void registryOres(RegistryKey<ConfiguredFeature<?, ?>> featureRegistryKey, ConfiguredFeature<?, ?> feature){
@@ -97,9 +100,9 @@ public class NegativeNBlocks {
                 new Identifier(MODID, id));
     }
 
-    private static void registryBlocks(Block block, String id, ItemGroup group, boolean isItem){
+    private static void registryBlocks(Block block, String id, ItemGroup group, boolean asItem){
         Registry.register(Registry.BLOCK, new Identifier(MODID, id), block);
-        if(isItem) {
+        if(asItem) {
             Registry.register(Registry.ITEM, new Identifier(MODID, id), new BlockItem(block, new FabricItemSettings().group(group)));
         }
     }

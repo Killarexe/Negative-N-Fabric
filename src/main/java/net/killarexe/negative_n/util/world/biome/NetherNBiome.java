@@ -47,6 +47,8 @@ public class NetherNBiome {
                 .ignoreVines().build())).decorate(ConfiguredFeatures.Decorators.SQUARE_HEIGHTMAP)
                 .decorate(Decorator.COUNT_EXTRA.configure(new CountExtraDecoratorConfig(5, 0.1f, 1))));*/
         generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.ANCIENT_DEBRIS_N_FEATURE_NETHER_N);
+        generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.QUARTZ_N_ORE_FEATURE_NETHER_N);
+        generationSettings.feature(GenerationStep.Feature.UNDERGROUND_ORES, OreFeatures.GOLD_N_ORE_FEATURE_NETHER_N);
         DefaultBiomeFeatures.addDefaultUndergroundStructures(generationSettings);
         DefaultBiomeFeatures.addLandCarvers(generationSettings);
         DefaultBiomeFeatures.addDefaultLakes(generationSettings);

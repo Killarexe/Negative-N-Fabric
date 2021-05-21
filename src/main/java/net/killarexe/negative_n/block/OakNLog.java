@@ -13,13 +13,14 @@ import net.minecraft.loot.context.LootContext;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.BlockRotation;
 import net.minecraft.util.math.Direction;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Collections;
 import java.util.List;
 
-public class OakNLog extends PillarBlock {
+public class OakNLog extends Block {
 
     public OakNLog() {
         super(FabricBlockSettings
@@ -29,6 +30,36 @@ public class OakNLog extends PillarBlock {
                 .sounds(BlockSoundGroup.WOOD)
                 .requiresTool()
                 .breakByTool(FabricToolTags.AXES, 0));
+        setDefaultState(getStateManager().getDefaultState().with(Properties.FACING, Direction.SOUTH));
+    }
+
+    @Override
+    public BlockState rotate(BlockState state, BlockRotation rotation) {
+        if (rotation == BlockRotation.CLOCKWISE_90 || rotation == BlockRotation.COUNTERCLOCKWISE_90) {
+            if ((Direction) state.get(Properties.FACING) == Direction.WEST || (Direction) state.get(Properties.FACING) == Direction.EAST) {
+                return state.with(Properties.FACING, Direction.UP);
+            } else if ((Direction) state.get(Properties.FACING) == Direction.UP || (Direction) state.get(Properties.FACING) == Direction.DOWN) {
+                return state.with(Properties.FACING, Direction.WEST);
+            }
+        }
+        return state;
+    }
+
+    @Override
+    public BlockState getPlacementState(ItemPlacementContext ctx) {
+        Direction facing = ctx.getPlayerFacing();
+        if (facing == Direction.WEST || facing == Direction.EAST)
+            facing = Direction.UP;
+        else if (facing == Direction.NORTH || facing == Direction.SOUTH)
+            facing = Direction.EAST;
+        else
+            facing = Direction.SOUTH;;
+        return this.getDefaultState().with(Properties.FACING, facing);
+    }
+
+    @Override
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(Properties.FACING);
     }
 
     @Override

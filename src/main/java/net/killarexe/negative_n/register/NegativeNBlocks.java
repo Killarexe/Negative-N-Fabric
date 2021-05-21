@@ -43,6 +43,8 @@ public class NegativeNBlocks {
     public static final AncientDebrisN ANCIENT_DEBRIS_N = new AncientDebrisN();
     public static final NetheriteNBlock NETHERITE_N_BLOCK = new NetheriteNBlock();
     public static final NetherNGoldNOre NETHER_N_GOLD_N_ORE = new NetherNGoldNOre();
+    public static final QuartzNOre QUARTZ_N_ORE = new QuartzNOre();
+    public static final QuartzNBlock QUARTZ_N_BLOCK = new QuartzNBlock();
     public static Block WATER_N;
 
     public static void register(){
@@ -74,6 +76,8 @@ public class NegativeNBlocks {
         registryBlocks(NETHERITE_N_BLOCK, "netherite_n_block", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(NETHERRACK_N, "netherrack_n", NegativeNItemGroups.BLOCKS, true);
         registryBlocks(NETHER_N_GOLD_N_ORE, "nether_n_gold_n_ore", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(QUARTZ_N_ORE, "quartz_n_ore", NegativeNItemGroups.BLOCKS, true);
+        registryBlocks(QUARTZ_N_BLOCK, "quartz_n_block", NegativeNItemGroups.BLOCKS, true);
 
         //WATER_N = Registry.register(Registry.BLOCK, new Identifier(MODID, "water_n"), new FluidBlock(NegativeNFluids.STILL_WATER_N, FabricBlockSettings.copyOf(Blocks.WATER)){});
     }
@@ -88,6 +92,8 @@ public class NegativeNBlocks {
         registryOres(addOreFeature("gold_n_ore_feature_overworld"), OreFeatures.GOLD_N_ORE_FEATURE_OVERWORLD);
         registryOres(addOreFeature("gold_n_ore_feature_underworld"), OreFeatures.GOLD_N_ORE_FEATURE_UNDERWORLD);
         registryOres(addOreFeature("ancient_debris_n_feature_nether_n"), OreFeatures.ANCIENT_DEBRIS_N_FEATURE_NETHER_N);
+        registryOres(addOreFeature("quartz_n_ore_feature_nether_n"), OreFeatures.QUARTZ_N_ORE_FEATURE_NETHER_N);
+        registryOres(addOreFeature("gold_n_ore_feature_nether_n"), OreFeatures.GOLD_N_ORE_FEATURE_NETHER_N);
     }
 
     private static void registryOres(RegistryKey<ConfiguredFeature<?, ?>> featureRegistryKey, ConfiguredFeature<?, ?> feature){

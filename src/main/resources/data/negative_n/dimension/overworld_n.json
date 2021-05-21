@@ -2,11 +2,13 @@
   "type": "minecraft:overworld",
   "generator": {
     "type": "minecraft:noise",
+    "seed": 123456789,
     "biome_source": {
       "type": "minecraft:overworld",
       "biome_source": {
         "seed": 123456789,
-        "type": "minecraft:fixed",
+        "type": "minecraft:vanilla_layered",
+        "large_biomes": false,
         "biome": "negative_n:oak_n_forest"
       }
     },

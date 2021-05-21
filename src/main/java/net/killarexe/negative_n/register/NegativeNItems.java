@@ -34,6 +34,7 @@ public class NegativeNItems {
     public static final NetheriteNIngot NETHERITE_N_INGOT = new NetheriteNIngot();
     public static final GoldNNugget GOLD_N_NUGGET = new GoldNNugget();
     public static final IronNNugget IRON_N_NUGGET = new IronNNugget();
+    public static final QuartzN QUARTZ_N = new QuartzN();
 
     //Tools
     public static final ToolItem DIAMOND_N_SWORD = new BaseTool().SWORD(CustomToolMaterial.DIAMOND_N);
@@ -155,6 +156,8 @@ public class NegativeNItems {
         registerItem(NETHERITE_N_SCRAP, "netherite_n_scrap");
         registerItem(NETHERITE_N_INGOT, "netherite_n");
         registerItem(NETHER_N_ARTEFACT, "nether_n_artefact");
+        registerItem(IRON_N_NUGGET, "iron_n_nugget");
+        registerItem(QUARTZ_N, "quartz_n");
 
         LOGGER.info("Items Registering Complete!");
     }

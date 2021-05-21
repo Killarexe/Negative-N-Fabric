@@ -110,6 +110,18 @@ public class OreFeatures{
             .spreadHorizontally()
             .repeat(4); // number of veins per chunk
 
+    public static ConfiguredFeature<?, ?> GOLD_N_ORE_FEATURE_NETHER_N = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    BASE_STONE_N_UNDERWORLD,
+                    NegativeNBlocks.GOLD_N_ORE.getDefaultState(),
+                    14)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    128)))
+            .spreadHorizontally()
+            .repeat(14); // number of veins per chunk
+
     public static ConfiguredFeature<?, ?> ANCIENT_DEBRIS_N_FEATURE_NETHER_N = Feature.ORE
             .configure(new OreFeatureConfig(
                     BASE_NETHERRACK_N_NETHER,
@@ -121,4 +133,16 @@ public class OreFeatures{
                     16)))
             .spreadHorizontally()
             .repeat(4); // number of veins per chunk
+
+    public static ConfiguredFeature<?, ?> QUARTZ_N_ORE_FEATURE_NETHER_N = Feature.ORE
+            .configure(new OreFeatureConfig(
+                    BASE_NETHERRACK_N_NETHER,
+                    NegativeNBlocks.QUARTZ_N_ORE.getDefaultState(),
+                    16)) // vein size
+            .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(
+                    0,
+                    0,
+                    128)))
+            .spreadHorizontally()
+            .repeat(14); // number of veins per chunk
 }

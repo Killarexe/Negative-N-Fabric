@@ -2,11 +2,9 @@ package net.killarexe.negative_n.block;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
-import net.killarexe.negative_n.register.NegativeNItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.sound.BlockSoundGroup;
@@ -14,16 +12,16 @@ import net.minecraft.sound.BlockSoundGroup;
 import java.util.Collections;
 import java.util.List;
 
-public class AncientDebrisN extends Block {
+public class QuartzNBlock extends Block {
 
-    public AncientDebrisN() {
+    public QuartzNBlock() {
         super(FabricBlockSettings
-                .of(Material.METAL)
-                .strength(5, 50)
+                .of(Material.STONE)
+                .strength(1.3f, 10)
                 .breakByHand(false)
-                .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
+                .sounds(BlockSoundGroup.STONE)
                 .requiresTool()
-                .breakByTool(FabricToolTags.PICKAXES, 6));
+                .breakByTool(FabricToolTags.PICKAXES, 1));
     }
 
     @Override

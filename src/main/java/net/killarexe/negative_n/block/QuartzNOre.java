@@ -6,7 +6,6 @@ import net.killarexe.negative_n.register.NegativeNItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.loot.context.LootContext;
 import net.minecraft.sound.BlockSoundGroup;
@@ -14,14 +13,14 @@ import net.minecraft.sound.BlockSoundGroup;
 import java.util.Collections;
 import java.util.List;
 
-public class AncientDebrisN extends Block {
+public class QuartzNOre extends Block {
 
-    public AncientDebrisN() {
+    public QuartzNOre() {
         super(FabricBlockSettings
                 .of(Material.METAL)
-                .strength(5, 50)
+                .strength(5, 19)
                 .breakByHand(false)
-                .sounds(BlockSoundGroup.ANCIENT_DEBRIS)
+                .sounds(BlockSoundGroup.NETHER_GOLD_ORE)
                 .requiresTool()
                 .breakByTool(FabricToolTags.PICKAXES, 6));
     }
@@ -32,6 +31,6 @@ public class AncientDebrisN extends Block {
         if(!drop.isEmpty()){
             return drop;
         }
-        return Collections.singletonList(new ItemStack(this, 1));
+        return Collections.singletonList(new ItemStack(NegativeNItems.QUARTZ_N, 1));
     }
 }

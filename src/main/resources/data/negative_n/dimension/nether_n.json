@@ -1,14 +1,24 @@
 {
-  "type": "minecraft:nether_n",
+  "type": "negative_n:nether_n",
   "generator": {
     "type": "minecraft:noise",
-    "biome_source": {
-      "type": "minecraft:nether",
+    "seed": 123456789,
       "biome_source": {
-        "seed": 123456789,
-        "type": "minecraft:fixed",
-        "biome": "negative_n:nether_n_biome"
-      }
+            "type": "minecraft:multi_noise",
+            "seed": 123456789,
+            "preset": "nether",
+            "biomes": [
+              {
+                "biome": "negative_n:nether_n_biome",
+                "parameters": {
+                  "altitude": 0,
+                  "temperature": 0,
+                  "humidity": 0,
+                  "weirdness": 0,
+                  "offset": 0
+                }
+              }
+              ]
     },
     "settings": {
       "name": "negative_n:nether_n",
@@ -26,7 +36,7 @@
         }
       },
       "noise": {
-        "height": 256,
+        "height": 128,
         "density_factor": 1,
         "density_offset": -0.46875,
         "size_horizontal": 1,

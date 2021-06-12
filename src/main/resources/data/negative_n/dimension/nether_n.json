@@ -1,5 +1,5 @@
 {
-  "type": "negative_n:nether_n",
+  "type": "negaitve_n:nether_n",
   "generator": {
     "type": "minecraft:noise",
     "seed": 123456789,

@@ -415,11 +415,13 @@ Amplify and listen to BIPOC voices!
 Educate your friends on anti-racism!
 Support the BIPOC community and creators!
 Stand up for equality in your community!
+NEGATIVE-N START HERE!!!
 Negative-N!
 Yayy 1.3!
 A mod made by Killar.exe and Rainer!
 Little Rage
 Using Forge!
+Using Fabric
 Do you use Optifine?
 Wait That's Illegal!
 Rosa
@@ -434,10 +436,47 @@ Mod Of The Week!
 DOOOO WEEE OOOOOO
 Game Boiiiii
 GameCube is Minecraft?
-1.17 = 1.18
+1.17 < 1.18
 05072007
 Finaly 1.3.1!
+Finaly 0.3a!
 Killar.exe was Here!
+Rainer was Here!
 You was Here!
 Miss Who and Mr.Tested <3
 Negative-N Forge Edition!
+Java vs Python
+Javascript is always there...
+this.setTitleScreen(true);
+Wow that pretty cool
+Dani?
+Nani?
+0.3a!
+1.3.1!
+Fabric or Forge?
+This splash text show only in the Fabric version of Negative-N
+POOP_OF_NOSE
+Miaou835/Akira835
+Gzkki, Mieks!
+Doyeah
+We = Oui
+N-evitageN
+On curseforge and mcreator
+A French Mod!
+Made in France!
+public class Main{public static void main(String[] args){System.out.println("Hello, World!");}}
+Little Rage Engine
+Little Rage Maker
+Use brave!
+To much features use the lite version!
+03/17/2020 at 8:36PM
+03/17/2020
+Negative-N was published for the first time at 03/17/2020 at 8:36PM
+03/14/2020
+03/14/2020 at 9:44PM
+Negative-N was created the 03/14/2020 at 9:44PM and 36 seconds
+Welcome to Negative-N!
+Thx for Downloading Negaitve-N!
+Multiplayer Test
+splashes.txt
+

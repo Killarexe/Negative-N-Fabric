@@ -4,13 +4,13 @@
   "version": "${version}",
 
   "name": "Negative-N",
-  "description": "This is a Fabric version of Nagetive-N",
+  "description": "This is a Fabric version of Negative-N",
   "authors": [
     "Killar.exe"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/negative-n",
+    "sources": "https://github.com/Killarexe/Negative-N-Lite-Version"
   },
 
   "license": "CC0-1.0",
@@ -32,7 +32,7 @@
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
-    "minecraft": "1.16.x"
+    "minecraft": "1.17.x"
   },
   "suggests": {
     "another-mod": "*"

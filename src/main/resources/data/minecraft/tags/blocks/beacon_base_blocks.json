@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:diamond_n_block",
+    "negative_n:iron_n_block",
+    "negative_n:gold_n_block",
+    "negative_n:netherite_n_block"
+  ]
+}

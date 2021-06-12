@@ -13,5 +13,5 @@
   "infiniburn": "minecraft:infiniburn_overworld",
   "min_y": 0,
   "height": 256,
-  "effects": "negative_n:nether_n"
+  "effects": "negative_n:netherndim"
 }

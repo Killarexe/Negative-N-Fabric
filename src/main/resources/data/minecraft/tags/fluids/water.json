@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:lava_n",
+    "negative_n:lava_n_flowing",
+  ]
+}

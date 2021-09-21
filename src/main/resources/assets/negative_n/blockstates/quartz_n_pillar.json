@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "negative_n:block/quartz_n_pillar"
-    },
-    "facing=north": {
-      "model": "negative_n:block/quartz_n_pillar"
-    },
-    "facing=east": {
-      "model": "negative_n:block/quartz_n_pillar",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "negative_n:block/quartz_n_pillar",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "negative_n:block/quartz_n_pillar",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "negative_n:block/quartz_n_pillar"
+    },
+    "axis=z": {
       "model": "negative_n:block/quartz_n_pillar",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

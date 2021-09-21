@@ -2,12 +2,12 @@ package net.killarexe.negative_n;
 
 import net.fabricmc.api.ModInitializer;
 import net.killarexe.negative_n.register.*;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.*;
 
 public class NegativeNMod implements ModInitializer {
 
-	public static String VER = "0.3a";
+	public static String VER = "0.4a";
+	public static final String MODID = "negative_n";
 	private Logger LOGGER = LogManager.getLogger();
 
 	@Override

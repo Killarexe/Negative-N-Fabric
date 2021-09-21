@@ -1,42 +1,43 @@
 package net.killarexe.negative_n.register;
 
+import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killarexe.negative_n.item.*;
 import net.killarexe.negative_n.util.material.armor.BaseArmor;
 import net.killarexe.negative_n.util.material.armor.CustomArmorMaterial;
 import net.killarexe.negative_n.util.material.tool.BaseTool;
 import net.killarexe.negative_n.util.material.tool.CustomToolMaterial;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ToolItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
-public class NegativeNItems {
-
-    static String MODID = "negative_n";
-    static Logger LOGGER = LogManager.getLogger();
+public class NegativeNItems extends NegativeNRegisterType{
 
     //Items
-    public static final DiamondN DIAMOND_N = new DiamondN();
-    public static final IronNIngot IRON_N_INGOT = new IronNIngot();
-    public static final RawIronN RAW_IRON_N = new RawIronN();
-    public static final CoalN COAL_N = new CoalN();
-    public static final StickN STICK_N = new StickN();
-    public static final LeatherN LEATHER_N = new LeatherN();
+    public static final Item DIAMOND_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item IRON_N_INGOT = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item RAW_IRON_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item COAL_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item STICK_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item LEATHER_N = createBasicItem(NegativeNItemGroups.MISC);
     public static final PowderN POWDER_N = new PowderN();
     public static final UnderworldArtefact UNDERWORLD_ARTEFACT = new UnderworldArtefact();
     public static final NetherNArtefact NETHER_N_ARTEFACT = new NetherNArtefact();
-    public static final GoldNIngot GOLD_N_INGOT = new GoldNIngot();
-    public static final RawGoldN RAW_GOLD_N = new RawGoldN();
-    public static final NetheriteNScrap NETHERITE_N_SCRAP = new NetheriteNScrap();
-    public static final NetheriteNIngot NETHERITE_N_INGOT = new NetheriteNIngot();
-    public static final GoldNNugget GOLD_N_NUGGET = new GoldNNugget();
-    public static final IronNNugget IRON_N_NUGGET = new IronNNugget();
-    public static final QuartzN QUARTZ_N = new QuartzN();
-    public static final RawCopperN RAW_COPPER_N = new RawCopperN();
-    public static final CopperNIngot COPPER_N_INGOT = new CopperNIngot();
+    public static final Item GOLD_N_INGOT = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item RAW_GOLD_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item NETHERITE_N_SCRAP = createFireproofItem(NegativeNItemGroups.MISC);
+    public static final Item NETHERITE_N_INGOT = createFireproofItem(NegativeNItemGroups.MISC);
+    public static final Item GOLD_N_NUGGET = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item IRON_N_NUGGET = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item QUARTZ_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item RAW_COPPER_N = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item COPPER_N_INGOT = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item WHEAT_N_SEED = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item BEETROOT_N_SEED = createBasicItem(NegativeNItemGroups.MISC);
+    public static final Item BREAD_N = createFoodItem(NegativeNItemGroups.FOOD, NegativeNFoodComponents.BREAD_N);
 
     //Tools
     public static final ToolItem DIAMOND_N_SWORD = new BaseTool().SWORD(CustomToolMaterial.DIAMOND_N);
@@ -122,6 +123,7 @@ public class NegativeNItems {
         registerItem(POWDER_N, "negative_dust");
         registerItem(UNDERWORLD_ARTEFACT, "underworld_artefact");
         registerItem(GOLD_N_INGOT, "gold_n_ingot");
+        registerItem(GOLD_N_NUGGET, "gold_n_nugget");
         registerItem(RAW_GOLD_N, "raw_gold_n");
         registerItem(GOLD_N_HELMET, "gold_n_helmet");
         registerItem(GOLD_N_CHESTPLATE, "gold_n_chestplate");
@@ -162,11 +164,28 @@ public class NegativeNItems {
         registerItem(QUARTZ_N, "quartz_n");
         registerItem(RAW_COPPER_N, "raw_copper_n");
         registerItem(COPPER_N_INGOT, "copper_n_ingot");
+        registerItem(WHEAT_N_SEED, "wheet_n_seed");
+        registerItem(BEETROOT_N_SEED, "beetroot_n_seed");
 
         LOGGER.info("Items Registering Complete!");
     }
 
     private static void registerItem(Item item, String id){
         Registry.register(Registry.ITEM, new Identifier(MODID, id), item);
+    }
+
+    private static Item createBasicItem(ItemGroup group){
+        Item item = new Item(new FabricItemSettings().group(group));
+        return item;
+    }
+
+    private static Item createFireproofItem(ItemGroup group){
+        Item item = new Item(new FabricItemSettings().group(group).fireproof());
+        return item;
+    }
+
+    private static Item createFoodItem(ItemGroup group, FoodComponent component){
+        Item item = new Item(new FabricItemSettings().group(group).food(component));
+        return item;
     }
 }

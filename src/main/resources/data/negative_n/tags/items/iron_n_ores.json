@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:iron_n_ore",
+    "negative_n:deepslate_n_iron_n_ore",
+    "negative_n:raw_iron_n"
+  ]
+}

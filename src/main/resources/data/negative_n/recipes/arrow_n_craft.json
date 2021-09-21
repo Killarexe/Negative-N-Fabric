@@ -1,5 +1,5 @@
 {
-  "group": "negative_n",
+  "group": "arrow_n",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0",
@@ -8,7 +8,7 @@
   ],
   "key": {
     "0": {
-      "item": "negative_n:iron_n_ingot"
+      "item": "negative_n:iron_n_nugget"
     },
     "1": {
       "item": "negative_n:stick_n"

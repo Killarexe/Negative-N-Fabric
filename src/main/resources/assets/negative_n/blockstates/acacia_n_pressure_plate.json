@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "negative_n:block/acacia_n_pressure_plate"
+    },
+    "powered=true": {
+      "model": "negative_n:block/acacia_n_pressure_plate_down"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "button_n",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "negative_n:gold_n_nugget"
+    }
+  ],
+  "result": {
+    "item": "negative_n:gold_n_button",
+    "count": 1
+  }
+}

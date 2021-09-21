@@ -3,6 +3,7 @@ package net.killarexe.negative_n.item;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.killarexe.negative_n.register.NegativeNBlocks;
 import net.killarexe.negative_n.register.NegativeNItemGroups;
+import net.killarexe.negative_n.register.NegativeNStats;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.player.PlayerEntity;
@@ -40,6 +41,7 @@ public class PowderN extends Item {
         int y = pos.getY();
         int z = pos.getZ();
         ItemStack itemstack = context.getPlayer().getActiveItem();
+        context.getPlayer().increaseStat(NegativeNStats.INTERACT_WITH_POWDER_N, 1);
         if(world.getBlockState(new BlockPos(x, y, z)) == Blocks.DIRT.getDefaultState()){
             entity.playSound(SoundEvents.ENTITY_ZOMBIE_VILLAGER_CONVERTED, 1,1);
             world.setBlockState(new BlockPos(x, y, z), NegativeNBlocks.DIRT_N.getDefaultState());

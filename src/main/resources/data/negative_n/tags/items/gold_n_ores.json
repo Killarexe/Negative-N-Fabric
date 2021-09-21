@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:gold_n_ore",
+    "negative_n:deepslate_n_gold_n_ore",
+    "negative_n:raw_gold_n",
+    "negative_n:nether_n_gold_n_ore"
+  ]
+}

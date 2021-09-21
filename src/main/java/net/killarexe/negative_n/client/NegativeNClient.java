@@ -41,6 +41,7 @@ public class NegativeNClient implements ClientModInitializer {
     private void BlockRenderLayerInit(){
         //Blocks
         BlockRenderLayerMap.INSTANCE.putBlock(NegativeNBlocks.OAK_LEAVES_N, RenderLayer.getTranslucent());
+        BlockRenderLayerMap.INSTANCE.putBlocks(RenderLayer.getCutout(), NegativeNBlocks.WHEAT_N);
 
         //Fluids
         //BlockRenderLayerMap.INSTANCE.putFluids(RenderLayer.getTranslucent(), NegativeNFluids.STILL_WATER_N, NegativeNFluids.FLOWING_WATER_N);

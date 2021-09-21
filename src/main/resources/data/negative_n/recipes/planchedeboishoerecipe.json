@@ -1,5 +1,5 @@
 {
-  "group": "negative_n",
+  "group": "wooden_n_hoe",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01",
@@ -21,7 +21,7 @@
     }
   },
   "result": {
-    "item": "negative_n:wood_n_hoe",
+    "item": "negative_n:wooden_n_hoe",
     "count": 1
   }
 }

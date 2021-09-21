@@ -1,5 +1,5 @@
 {
-  "group": "negative_n",
+  "group": "flint",
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
@@ -10,7 +10,7 @@
     }
   ],
   "result": {
-    "item": "negative_n:mineingdim",
+    "item": "negative_n:mineing_dim",
     "count": 1
   }
 }

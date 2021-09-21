@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:cobblestone_n",
+    "negative_n:classic_cobblestone",
+    "negative_n:classic_cobblestone_n",
+    "negative_n:cobblestone_cave_game",
+    "negative_n:mossy_cobblestone_n",
+    "negative_n:classic_mossy_cobblestone",
+    "negative_n:classic_mossy_cobblestone_n",
+    "negative_n:cobbled_deepslate_n"
+  ]
+}

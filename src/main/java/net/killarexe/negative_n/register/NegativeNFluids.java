@@ -10,10 +10,7 @@ import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class NegativeNFluids {
-
-    static String MODID = "negative_n";
-    static Logger LOGGER = LogManager.getLogger();
+public class NegativeNFluids extends NegativeNRegisterType{
 
     public static FlowableFluid STILL_WATER_N;
     public static FlowableFluid FLOWING_WATER_N;

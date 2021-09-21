@@ -1,28 +1,16 @@
 {
   "variants": {
-    "facing=south": {
-      "model": "negative_n:block/acacia_log_n_stripped"
-    },
-    "facing=north": {
-      "model": "negative_n:block/acacia_log_n_stripped"
-    },
-    "facing=east": {
-      "model": "negative_n:block/acacia_log_n_stripped",
-      "x": 90
-    },
-    "facing=west": {
-      "model": "negative_n:block/acacia_log_n_stripped",
-      "x": 90
-    },
-    "facing=up": {
+    "axis=x": {
       "model": "negative_n:block/acacia_log_n_stripped",
       "x": 90,
       "y": 90
     },
-    "facing=down": {
+    "axis=y": {
+      "model": "negative_n:block/acacia_log_n_stripped"
+    },
+    "axis=z": {
       "model": "negative_n:block/acacia_log_n_stripped",
-      "x": 90,
-      "y": 90
+      "x": 90
     }
   }
 }

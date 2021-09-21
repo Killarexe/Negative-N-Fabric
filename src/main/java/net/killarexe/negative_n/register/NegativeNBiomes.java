@@ -14,10 +14,7 @@ import net.minecraft.world.gen.surfacebuilder.TernarySurfaceConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class NegativeNBiomes {
-
-    private static String MODID = "negative_n";
-    private static Logger LOGGER = LogManager.getLogger();
+public class NegativeNBiomes extends NegativeNRegisterType{
 
     public static final RegistryKey<Biome> OAK_N_FOREST_KEY = RegistryKey.of(Registry.BIOME_KEY, new Identifier(MODID, "oak_n_forest"));
     public static final RegistryKey<Biome> NETHER_N_KEY = RegistryKey.of(Registry.BIOME_KEY, new Identifier(MODID, "nether_n_biome"));
@@ -31,7 +28,7 @@ public class NegativeNBiomes {
         LOGGER.info("Biomes Register Complete!");
     }
 
-    private static void registerBiome(RegistryKey<Biome> key, ConfiguredSurfaceBuilder<TernarySurfaceConfig> surfaceBuilder, Biome biome, String id){
+    private void registerBiome(RegistryKey<Biome> key, ConfiguredSurfaceBuilder<TernarySurfaceConfig> surfaceBuilder, Biome biome, String id){
         Registry.register(BuiltinRegistries.CONFIGURED_SURFACE_BUILDER, new Identifier(MODID, id), surfaceBuilder);
         Registry.register(BuiltinRegistries.BIOME, key.getValue(), biome);
     }

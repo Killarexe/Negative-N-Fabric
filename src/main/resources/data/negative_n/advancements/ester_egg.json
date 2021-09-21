@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "item": "negative_n:easter_egg"
+    },
+    "title": {
+      "translate": "advancements.ester_egg.title"
+    },
+    "description": {
+      "translate": "advancements.ester_egg.descr"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "criteria": {
+    "ester_egg": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "negative_n:wtnn"
+}

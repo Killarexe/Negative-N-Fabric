@@ -9,10 +9,7 @@ import net.minecraft.util.registry.Registry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class NegativeNEnchentements {
-
-    static String MODID = "negative_n";
-    static Logger LOGGER = LogManager.getLogger();
+public class NegativeNEnchentements extends NegativeNRegisterType{
 
     public static final Smelting SMELTING = new Smelting();
     public static final Poisonus POISONUS = new Poisonus();

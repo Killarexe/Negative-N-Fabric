@@ -1,5 +1,5 @@
 {
-  "group": "negative_n",
+  "group": "diamond_n_chestplate",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "0 2",
@@ -33,7 +33,7 @@
     }
   },
   "result": {
-    "item": "negative_n:diamond_n_leggings",
+    "item": "negative_n:diamond_n_chestplate",
     "count": 1
   }
 }

@@ -4,9 +4,9 @@
   "experience": 1,
   "cookingtime": 200,
   "ingredient": {
-    "item": "negative_n:beefrawn"
+    "item": "negative_n:beefraw_n"
   },
   "result": {
-    "item": "negative_n:beefcookedn"
+    "item": "negative_n:beefcooked_n"
   }
 }

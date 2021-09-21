@@ -18,7 +18,7 @@
     "fresh": {
       "trigger": "minecraft:changed_dimension",
       "conditions": {
-        "to": "negative_n:nether_n"
+        "to": "negative_n:nether_n_dim"
       }
     }
   },

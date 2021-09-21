@@ -1,0 +1,13 @@
+{
+  "group": "button_n",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "negative_n:jungle_planks_n"
+    }
+  ],
+  "result": {
+    "item": "negative_n:jungle_n_button",
+    "count": 1
+  }
+}

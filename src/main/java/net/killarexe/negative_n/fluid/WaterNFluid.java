@@ -1,12 +1,9 @@
 package net.killarexe.negative_n.fluid;
 
-import net.killarexe.negative_n.block.WaterN;
 import net.killarexe.negative_n.register.NegativeNBlocks;
 import net.killarexe.negative_n.register.NegativeNFluids;
-import net.killarexe.negative_n.register.NegativeNItems;
 import net.killarexe.negative_n.util.CustomFluid;
 import net.minecraft.block.BlockState;
-import net.minecraft.fluid.FlowableFluid;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.Item;

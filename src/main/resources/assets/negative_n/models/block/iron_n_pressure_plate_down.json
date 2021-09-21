@@ -1,0 +1,6 @@
+{
+  "parent": "block/pressure_plate_down",
+  "textures": {
+    "texture": "negative_n:blocks/iron_n_block"
+  }
+}

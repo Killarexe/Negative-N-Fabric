@@ -63,7 +63,7 @@ public class OreFeatures{
             NegativeNBlocks.COAL_N_ORE,
             0,
             128,
-            32,
+            24,
             16
     );
 
@@ -72,7 +72,7 @@ public class OreFeatures{
             NegativeNBlocks.ANCIENT_DEBRIS_N,
             0,
             128,
-            32,
+            24,
             16
     );
 
@@ -148,7 +148,7 @@ public class OreFeatures{
 
     public static ConfiguredFeature<?, ?> createOreFreature(RuleTest ruleTest, Block block, int minY, int maxY, int veinSize,int perChunck){
         ConfiguredFeature<?, ?> FEATURE = Feature.ORE.configure(
-                new OreFeatureConfig(BASE_NETHERRACK_N_NETHER, NegativeNBlocks.QUARTZ_N_ORE.getDefaultState(), veinSize))
+                new OreFeatureConfig(ruleTest, block.getDefaultState(), veinSize))
                 .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(minY), YOffset.fixed(maxY))))
                 .spreadHorizontally()
                 .repeat(perChunck));

@@ -317,7 +317,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "negative_n:rottenfleshn",
+          "name": "negative_n:rottenflesh_n",
           "weight": 25,
           "functions": [
             {

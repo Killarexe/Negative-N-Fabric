@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "negative_n:redstone_n_ore",
+    "negative_n:deepslate_n_redstone_n_ore"
+  ]
+}

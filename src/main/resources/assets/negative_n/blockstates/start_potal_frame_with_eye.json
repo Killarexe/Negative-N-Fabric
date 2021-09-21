@@ -1,7 +1,16 @@
 {
   "variants": {
-    "": {
+    "axis=x": {
+      "model": "negative_n:block/start_potal_frame_with_eye",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
       "model": "negative_n:block/start_potal_frame_with_eye"
+    },
+    "axis=z": {
+      "model": "negative_n:block/start_potal_frame_with_eye",
+      "x": 90
     }
   }
 }

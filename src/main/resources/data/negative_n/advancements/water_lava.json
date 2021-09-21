@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "negative_n:lava_nbucket"
+    },
+    "title": {
+      "translate": "advancements.water_lava.title"
+    },
+    "description": {
+      "translate": "advancements.water_lava.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "water_lava": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "negative_n:lava_nbucket",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "negative_n:is_mineing_t_ime"
+}

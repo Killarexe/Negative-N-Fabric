@@ -1,0 +1,6 @@
+{
+  "parent": "block/button_pressed",
+  "textures": {
+    "texture": "negative_n:blocks/gold_n_block"
+  }
+}

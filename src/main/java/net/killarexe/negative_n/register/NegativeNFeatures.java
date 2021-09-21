@@ -3,9 +3,7 @@ package net.killarexe.negative_n.register;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectionContext;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.killarexe.negative_n.util.world.biome.CustomBiomeSelectors;
 import net.killarexe.negative_n.util.world.feature.OreFeatures;
-import net.killarexe.negative_n.util.world.feature.TreeFeatures;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.BuiltinRegistries;
 import net.minecraft.util.registry.Registry;
@@ -13,15 +11,10 @@ import net.minecraft.util.registry.RegistryKey;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 
 import java.util.function.Predicate;
 
-public class NegativeNFeatures {
-
-    static String MODID = "negative_n";
-    static Logger LOGGER = LogManager.getLogger();
+public class NegativeNFeatures extends NegativeNRegisterType{
 
     public static void register(){
         LOGGER.info("Registering Features");

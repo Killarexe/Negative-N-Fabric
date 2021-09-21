@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "negative_n:blocks/cave_vines_plant_n_lit",
+    "particle": "negative_n:blocks/cave_vines_plant_n_lit"
+  }
+}

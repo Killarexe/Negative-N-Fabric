@@ -1,5 +1,5 @@
 {
-  "group": "negative_n",
+  "group": "wooden_n_axe",
   "type": "minecraft:crafting_shaped",
   "pattern": [
     "01",
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "negative_n:wood_n_axe",
+    "item": "negative_n:wooden_n_axe",
     "count": 1
   }
 }
